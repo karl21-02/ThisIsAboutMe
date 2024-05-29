@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 95%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+}
+
+.header-container {
+    height: 120px;
+    padding: 6px;
+    position: relative;
+    background-color: rgb(181, 181, 181);
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.logo > .logo-img {
+    width: 160px;
+    height: 100px;
+    margin: 10px 0px 10px 50px;
+    /* box-shadow: 0 0 10px black; */
+}
+
+.logo {
+    font-size: 30px;
+    line-height: 120px;
+    margin-left: 50px;
+}
+
+.div-link {
+    transition: 0.7s ease;
+}
+
+.div-link:hover {
+    color: dodgerblue;
+}
+
+.div-item {
+    display: inline-block;
+    background-color: rgb(181, 181, 181);
+    line-height: 120px;
+    margin-left: 100px;
+}
+
+.div-item:last-child {
+    margin-right: 100px;
+}
+
+.div-item:first-child {
+    margin-left: 0px;
+}
+
+.div-menu {
+    float: right;
+    overflow: hidden;
+    display: block;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 26px;
+    height: 5px;
+    margin: 5px auto;
+    background-color: rgb(26, 26, 26);
+}
+
+.stock-logo {
+    display: none;
+}
+
+/* 
+/////////////
+여기서부터 다른 페이지 보여주는 코드 */
+
+/* // default-section은 제외 */
+
+section:nth-child(2) > .content-article:nth-child(1) {
+    display: none;
+}
+section:nth-child(3) > .content-article:nth-child(1) {
+    display: none;
+}
+/* ////////// */
+
+.container-footer {
+    width: 100%;
+    height: 240px;
+    background-color: rgb(200, 200, 200);
+}
+
+.container-footer > * {
+    text-align: center;
+}
+
+.footer-main-text {
+    padding: 30px 0 20px 0;
+}
+
+.footer-sub-text {
+    padding-bottom: 10px;
+}
+
+.footer-logos {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.footer-logos > li {
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media screen and (min-width: 344px) and (max-width: 882px) {
+    .container-footer {
+        height: 290px;
+    }
+    .footer-main-text {
+        padding-top: 20px;
+    }
+}
+
+/* @media screen and (max-width: 412px) {
+    .container-footer {
+        height: 270px;
+    }
+} */
+
+@media screen and (max-width: 798px) {
+
+    body {
+        width: 100%;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 35px;
+        top: 45px;
+        width: 50px;
+    }
+
+    .hamburger.active span:nth-child(1) {
+        -webkit-transform: translateY(20px) rotate(315deg);
+        transform: translateY(20px) rotate(315deg);
+        transition: 0.3s;
+    }
+
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active span:nth-child(3) {
+        -webkit-transform: translateY(-20px) rotate(-315deg);
+        transform: translateY(-20px) rotate(-315deg);
+        transition: 0.3s;
+    }
+
+    .div-menu {
+        position: absolute;
+        top: 132px;
+        right: 0;
+        width: 100%;
+        max-height: 0;
+        opacity: 1;
+        transition: max-height 1s ease-out;
+    }
+
+    .div-menu.active {
+        max-height: 0;
+        display: block;
+        opacity: 1;
+        transition: max-height 1s ease-out;
+    }
+
+    .div-item {
+        margin: 0;
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        line-height: 50px;
+        position: relative;
+        transition: 0.25s ease-in;
+    }
+
+    .div-item:hover {
+        background-color: rgb(109, 115, 209);
+        transition: 0.25s ease-in;
+    }
+
+    .div-item:last-child {
+        margin: 0;
+    }
+    /* ///////// 여기서부터 푸터 */
+
+}

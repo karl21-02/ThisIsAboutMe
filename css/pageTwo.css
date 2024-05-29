@@ -1,0 +1,169 @@
+#page1 {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.main-subject {
+    height: 280px;
+    margin-bottom: 80px;
+}
+
+.main-subject:last-child {
+    margin-bottom: 30px;
+}
+
+.main-subject:first-child {
+    margin-top: 30px;
+}
+
+.sub-title {
+    text-align: center;
+    margin: 20px auto;
+    border: 3px solid gray;
+    width: 150px;
+    padding: 4px;
+}
+
+/* // */
+
+@media screen and (max-width: 798px) {
+    .main-subject:nth-child(5) .sub-content {
+        width: 100%;
+        height: 220px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        overflow-y: scroll;
+    }
+}
+
+/* / */
+
+#bk-title-container {
+    background-color: rgb(255, 232, 104);
+}
+
+.link-bk {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+.link-bk:hover {
+    background-color: rgb(255, 232, 104);
+}
+
+#gh-title-container {
+    background-color: rgb(46, 46, 46);
+    color: white;
+}
+
+.link-gh {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+.link-gh:hover {
+    background-color: rgb(46, 46, 46);
+}
+
+.link-gh:hover > a {
+    color: white;
+    transition: color 0.5s ease-in;
+}
+
+.contents-center {
+    text-align: center;
+}
+
+#naver-title-container {
+    background-color: green;
+    color: white;
+}
+
+.link-naver {
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+.link-naver:hover {
+    background-color: green;
+}
+
+.link-naver:hover > a {
+    color: white;
+    transition: color 0.5s ease-in;
+}
+
+#medilux-title-container {
+    background-color: rgb(12, 0, 179);
+    color: white;
+}
+
+.link-medilux {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+.link-medilux:hover {
+    background-color: rgb(12, 0, 179);
+}
+
+.link-medilux:hover > a {
+    color: white;
+    transition: color 0.5s ease-in;
+}
+
+
+#certi-title-container {
+    background-color: rgb(14, 154, 247);
+    color: white;
+}
+
+.link-certi {
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10px;
+    margin: 0px auto 10px;
+    background-color: transparent;
+    transition: background-color 0.5s ease-in;
+}
+
+.link-certi:hover {
+    background-color: rgb(14, 154, 247);
+}
+
+.link-certi:hover > a {
+    color: white;
+    transition: color 0.5s ease-in;
+}
+
+.sub-content {
+    overflow-wrap: break-word;
+}
+
+/* // */
